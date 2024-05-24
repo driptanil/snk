@@ -8,12 +8,12 @@ runs:
 
 inputs:
   github_user_name:
-    description: ${{ secrets.USERNAME }}
+    description: ${{ github.USERNAME }}
     required: true
   github_token:
     description: "github token used to fetch the contribution calendar. Default to the action token if empty."
     required: false
-    default: ${{ secrets.TOKEN }}
+    default: ${{ github.TOKEN }}
   outputs:
     required: false
     description: |
